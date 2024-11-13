@@ -14,7 +14,9 @@ module Pokeapi
     config.load_defaults 7.0
 
     # PokeAPI
-    config.pokeapi_url = 'https://pokeapi.co/api/v2/pokemon'
+    # config/application.rb ou config/initializers/pokeapi.rb
+    Rails.application.config.pokeapi_url = 'https://pokeapi.co/api/v2'
+
 
     # Configuration for the application, engines, and railties goes here.
     #
